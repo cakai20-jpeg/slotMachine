@@ -28,70 +28,132 @@ public class DiceGame
       int roll2 = slot2.roll();
       int roll3 = slot3.roll();
       
-       if r1 == 1 
-       return r1 = "lemon"
+//wheel 1
+       if roll1 == 1 ;
+       return roll1 = "lemon";
        
-       else if r1 == 2
-       return r1 = "diamond"
+       else if roll1 == 2;
+       return roll1 = "diamond";
        
-       else if r1 == 3 
-       return r1 = "seven"
+       else if roll1 == 3 ;
+       return roll1 = "seven";
        
-       else if r1 == 4 
-       return r1 = "horse shoe"
+       else if roll1 == 4 ;
+       return roll1 = "horse shoe";
        
-       else if r1 == 5
-       return r1 = "bars"
+       else if roll1 == 5;
+       return roll1 = "bars";
        
-       else if r1 == 6
-       return r1 = "cherry"
+       else if roll1 == 6;
+       return roll1 = "cherry";
        
-       else if r1 == 7 
-       return r1 = "heart"
+       else if roll1 == 7 ;
+       return roll1 = "heart";
        
-       else if r1 == 8 
-       return r1 = "bell"
+       else if roll1 == 8 ;
+       return roll1 = "bell";
        
-       else if r1 == 9 
-       return r1 = "bell"
+       else if roll1 == 9; 
+       return roll1 = "bell";
+//wheel 2
 
+       if roll2 == 1 ;
+       return roll2 = "lemon";
+       
+       else if roll2 == 2;
+       return roll2 = "diamond";
+       
+       else if roll2 == 3 ;
+       return roll2 = "seven";
+       
+       else if roll2 == 4 ;
+       return roll2 = "horse shoe";
+       
+       else if roll2 == 5;
+       return roll2 = "bars";
+       
+       else if roll2 == 6;
+       return roll2 = "cherry";
+       
+       else if roll2 == 7 ;
+       return roll2 = "heart";
+       
+       else if roll2 == 8 ;
+       return roll2 = "bell";
+       
+       else if roll2 == 9; 
+       return roll2 = "bell";
+       
+ //wheel 3
 
+       if roll3 == 1 ;
+       return roll3 = "lemon";
+       
+       else if roll3 == 2;
+       return roll3 = "diamond";
+       
+       else if roll3 == 3 ;
+       return roll3 = "seven";
+       
+       else if roll3 == 4 ;
+       return roll3 = "horse shoe";
+       
+       else if roll3 == 5;
+       return roll3 = "bars";
+       
+       else if roll3 == 6;
+       return roll3 = "cherry";
+       
+       else if roll3 == 7 ;
+       return roll3 = "heart";
+       
+       else if roll3 == 8 ;
+       return roll3 = "bell";
+       
+       else if roll3 == 9; 
+       return roll3 = "bell";
       
       
       // game winning 
-      if  slot1 == slot2 == slot3;
+      if  roll1 == roll2 == roll3;
       
       return 
           
       // multiplyer for winning 
      
       // all fruits 3.5x
-      multiplyer = 3.5
+      multiplyer = 3.5;
       
         // seven 20x
-        if slot1 == "seven"
-        multiplyer = 20
+        if slot1 == "seven";
+        multiplyer = 20;
         
         //bars 15x
-        else if slot1 == "bars"
-        multiplyer = 15
+        else if slot1 == "bars";
+        multiplyer = 15;
         
         //bell 10x
-        else if slot1 == "bell" 
-        multiplyer = 10
+        else if slot1 == "bell";
+        multiplyer = 10;
         
         //horse shoe 7.5x
-        else if slot1 == "horse shoe"
-        multiplyer = 7.5
+        else if slot1 == "horse shoe";
+        multiplyer = 7.5;
         
         //hearts 5x 
-        else if slot1 == "heart"
-        multiplyer = 5
+        else if slot1 == "heart";
+        multiplyer = 5;
       
-      System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!")
-      creddits = (betAmmount * multiplyer) + creddits
+      System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
+      creddits = (betAmmount * multiplyer) + creddits;
+      
+      else if roll1 == roll2 
+      
+      else if roll1 == roll3
+      
+      else if roll2 == roll3
       // dont win 
       else 
-      return "better luck next time"
+      return "better luck next time";
  
   }
