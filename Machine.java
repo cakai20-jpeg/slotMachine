@@ -11,7 +11,7 @@ public class Machine
    {
     //pull rolls 3 each numnber = different outcome 
       //outcomes are diamond lemo watermellon heart seven bell horse shoe cherry bar
-       return (int)(Math.random() * 9) + 1
+       return (int)(Math.random() * 9) + 1;
        
       
        
