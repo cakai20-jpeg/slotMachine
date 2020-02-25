@@ -5,9 +5,9 @@ public class DiceGame
   {
     
     
-   slot1 = new Machine()
-   slot2 = new Machine()
-   slot3 = new Machine()
+   slot1 = new Machine();
+   slot2 = new Machine();
+   slot3 = new Machine();
       
       int creddits = 100;
       
@@ -147,11 +147,81 @@ public class DiceGame
       System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
       creddits = (betAmmount * multiplyer) + creddits;
       
-      else if roll1 == roll2 
+      else if roll1 == roll2;
       
-      else if roll1 == roll3
+        return 
+         // seven 20x
+         multiplyer = 1.5;
+         
+        if slot1 == "seven";
+        multiplyer = 10;
+        
+        //bars 15x
+        else if slot1 == "bars";
+        multiplyer = 7.5;
+        
+        //bell 10x
+        else if slot1 == "bell";
+        multiplyer = 5;
+        
+        //horse shoe 7.5x
+        else if slot1 == "horse shoe";
+        multiplyer = 3.5;
+        
+        //hearts 5x 
+        else if slot1 == "heart";
+        multiplyer = 2;
       
-      else if roll2 == roll3
+        
+      else if roll1 == roll3;
+      
+       return 
+         // seven 20x
+         multiplyer = 1.5;
+         
+        if slot1 == "seven";
+        multiplyer = 10;
+        
+        //bars 15x
+        else if slot1 == "bars";
+        multiplyer = 7.5;
+        
+        //bell 10x
+        else if slot1 == "bell";
+        multiplyer = 5;
+        
+        //horse shoe 7.5x
+        else if slot1 == "horse shoe";
+        multiplyer = 3.5;
+        
+        //hearts 5x 
+        else if slot1 == "heart";
+        multiplyer = 2;
+      
+      else if roll2 == roll3;
+      
+       return 
+         // seven 20x
+         multiplyer = 1.5;
+         
+        if slot2 == "seven";
+        multiplyer = 10;
+        
+        //bars 15x
+        else if slot2 == "bars";
+        multiplyer = 7.5;
+        
+        //bell 10x
+        else if slot2 == "bell";
+        multiplyer = 5;
+        
+        //horse shoe 7.5x
+        else if slot2 == "horse shoe";
+        multiplyer = 3.5;
+        
+        //hearts 5x 
+        else if slot2 == "heart";
+        multiplyer = 2;
       // dont win 
       else 
       return "better luck next time";
