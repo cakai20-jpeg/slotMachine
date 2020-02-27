@@ -28,34 +28,54 @@ public class DiceGame
       public int roll2 = slot2.roll();
       public int roll3 = slot3.roll();
     if 
-       (roll1 == 1);
-       return roll1 = "lemon";
+       (roll1 == 1)
+       {
+       return String roll1 = "lemon";
+       }
        
+       else 
+          if (roll1 == 2)
+          {
+          return String roll1 = "diamond";
+          }
+       else 
+          if (roll1 == 3)
+          {
+          return String roll1 = "seven";
+          }
+       else 
+          if (roll1 == 4)
+          {
+          return String roll1 = "horse shoe";
+          }
+       else 
+          if (roll1 == 5)
+          {
+          return String roll1 = "bars";
+          }
+       else
+          if (roll1 == 6)
+          {
+          return String roll1 = "cherry";
+          }
+       else 
+          if (roll1 == 7)
+          {
+          return String roll1 = "heart";
+          }
+       else 
+          if (roll1 == 8)
+          {
+          return String roll1 = "bell";
+          }
        
-       else if (roll1 == 2);
-       return String roll1 = "diamond";
-       
-       else if (roll1 == 3);
-       return String roll1 = "seven";
-       
-       else if (roll1 == 4);
-       return String roll1 = "horse shoe";
-       
-       else if (roll1 == 5);
-       return String roll1 = "bars";
-       
-       else if (roll1 == 6);
-       return String roll1 = "cherry";
-       
-       else if (roll1 == 7);
-       return String roll1 = "heart";
-       
-       else if (roll1 == 8);
-       return String roll1 = "bell";
-       
-       else if (roll1 == 9); 
-       return String roll1 = "bell";
-         }
+       else 
+          if (roll1 == 9)
+          {
+          return String roll1 = "bell";
+          }
+      }
+      System.out.print(roll1 + " | ")
 //wheel 2
 
        if 
@@ -87,6 +107,7 @@ public class DiceGame
        else if (roll2 == 9); 
        return String roll2 = "bell";
        }
+         System.out.print(roll2 + " | ")
  //wheel 3
 
        if (roll3 == 1);
@@ -116,9 +137,10 @@ public class DiceGame
        else if (roll3 == 9); 
        return String roll3 = "bell";
       
-      
+      System.out.print(roll3)
       // game winning 
-      if  (roll1 == roll2 == roll3);
+      if  (roll1 == roll2 == roll3)
+      {
       
       return 
           
@@ -132,29 +154,30 @@ public class DiceGame
         multiplyer = 20;
         
         //bars 15x
-        else if (slot1 == "bars");
+        else 
+           if (slot1 == "bars");
        double multiplyer = 15;
         
         //bell 10x
-        else if (slot1 == "bell");
-      double multiplyer = 10;
-        
+        else if (slot1 == "bell")
+           {
+           double multiplyer = 10;
+           {
         //horse shoe 7.5x
-        else if (slot1 == "horse shoe");
-       double multiplyer = 7.5;
-        
+        else if (slot1 == "horse shoe")
+           {
+           double multiplyer = 7.5;
+           {
         //hearts 5x 
-        else if (slot1 == "heart");
-       double multiplyer = 5;
-      
+        else if (slot1 == "heart")
+           {
+           double multiplyer = 5;
+           {
       System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
       creddits = (betAmmount * multiplyer) + creddits;
-      
+      }
       else if (roll1 == roll2);
-      
-        return 
-         // seven 20x
-        public double multiplyer = 1.5;
+      {
          
         if (slot1 == "seven");
         return public double multiplyer = 10;
@@ -174,36 +197,45 @@ public class DiceGame
         //hearts 5x 
         else if (slot1 == "heart");
         return public double multiplyer = 2;
-      
         
+         else if
+         return 
+        public double multiplyer = 1.5;
+      
+      }
       else if (roll1 == roll3);
       
        return 
          // seven 20x
          public double multiplyer = 1.5;
          
-        if (slot1 == "seven");
+        if (slot1 == "seven")
+        {
         return public double multiplyer = 10;
-        
+        }
         //bars 15x
-        else if (slot1 == "bars");
-        return public double multiplyer = 7.5;
-        
+        else if (slot1 == "bars")
+           {
+           return public double multiplyer = 7.5;
+           }
         //bell 10x
-        else if (slot1 == "bell");
-        return public double multiplyer = 5;
-        
+        else if (slot1 == "bell")
+           {
+           return public double multiplyer = 5;
+           }
         //horse shoe 7.5x
-        else if (slot1 == "horse shoe");
-       return public double multiplyer = 3.5;
-        
+        else if (slot1 == "horse shoe")
+           {
+           return public double multiplyer = 3.5;
+           }
         //hearts 5x 
-        else if (slot1 == "heart");
-        return public double multiplyer = 2;
-        
+        else if (slot1 == "heart")
+           {
+           return public double multiplyer = 2;
+           }
            System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
       creddits = (betAmmount * multiplyer) + creddits;
-      
+      }
       else if (roll2 == roll3);
       
        return 
