@@ -1,26 +1,30 @@
 import java.util.Scanner;
 public class slotMachine
 {
-    public static void main(String[] args);
+    public static void main(String[] args)
     {
-    
-    
         Machine slot1 = new Machine();
         Machine slot2 = new Machine();
         Machine slot3 = new Machine();
       
-        double muiltiplyer = 1;
+        double multiplyer = 1;
       
-        int creddits = 100;
+        double creddits = 100;
       
-        System.out.println("you have" + creddits + " creddits");
+        System.out.println("you have " + creddits + " creddits");
       
         Scanner bet = new Scanner(System.in);
         System.out.println("Please enter bet ammount");
         double betAmmount = bet.nextDouble();
         creddits = creddits - betAmmount;
-      
-        System.out.println("pres any key to spin");
+        if (creddits < 0 )
+        {
+            creddits = creddits + betAmmount;
+            System.out.println("you have insufficient funds");
+        }
+        else
+        {
+     
         bet.nextLine();
           //spinning slot
           
@@ -29,29 +33,24 @@ public class slotMachine
         int roll3 = slot3.roll();
       
            System.out.println(roll1 + "|" + roll2 + "|" + roll3);
-      // game winning 
         if(roll1 == roll2 && roll1 == roll3)
         {
             if (roll1 == 1)
             {
                 multiplyer = 20;
             }
-        //bars 15x
             else if (roll1 == 2)
             {
                 multiplyer = 15;
             }
-        //bell 10x
-            else if (roll == 3)
+            else if (roll1 == 3)
             {
                 multiplyer = 10;
-            {
-            //horse shoe 7.5x
-            else if (roll == 4)
+            }
+            else if (roll1 == 4)
             {
                 multiplyer = 7.5;
-            {
-            //hearts 5x 
+            }
             else if (roll1 == 5)
             {
                 multiplyer = 5;
@@ -60,13 +59,13 @@ public class slotMachine
             {
                 multiplyer = 3.5;
             }
-            System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
+            System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
             creddits = (betAmmount * multiplyer) + creddits;
         }
         else if (roll1 == roll2)
         {
          
-            if (roll == 1)
+            if (roll1 == 1)
             {
                 multiplyer = 10;
             }
@@ -104,7 +103,7 @@ public class slotMachine
                 multiplyer = 7.5;
             }
         //bell 10x
-            else if (roll == 3)
+            else if (roll1 == 3)
             {
                 multiplyer = 5;
             }
@@ -122,7 +121,7 @@ public class slotMachine
             {
                 multiplyer = 1.5;
             }
-                System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
+                System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
                 creddits = (betAmmount * multiplyer) + creddits;
         }
         else if (roll2 == roll3)
@@ -135,7 +134,7 @@ public class slotMachine
             {
                 multiplyer = 7.5;
             }
-            else  if (rol2 == 3)
+            else  if (roll2 == 3)
             {
                 multiplyer = 5;
             }
@@ -151,14 +150,15 @@ public class slotMachine
             {
                 multiplyer = 1.5;
             }
-                System.out.println("Congragulations! you just won" + betAmmount * multiplyer + "creddits!");
+                System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
                 creddits = (betAmmount * multiplyer) + creddits;
+        }
         else 
         {
             System.out.println("better luck next time");
         }
         }
-     
- }
+    }
 }
-}
+
+
