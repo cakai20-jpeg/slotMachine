@@ -41,23 +41,23 @@ public class slotMachine
             }
             else if (roll1 == 2)
             {
-                multiplyer = 15;
+                multiplyer = 17.5;
             }
             else if (roll1 == 3)
             {
-                multiplyer = 10;
+                multiplyer = 15;
             }
             else if (roll1 == 4)
             {
-                multiplyer = 7.5;
+                multiplyer = 10;
             }
             else if (roll1 == 5)
             {
-                multiplyer = 5;
+                multiplyer = 7.5;
             }
             else 
             {
-                multiplyer = 3.5;
+                multiplyer = 5;
             }
             System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
             creddits = (betAmmount * multiplyer) + creddits;
@@ -89,6 +89,8 @@ public class slotMachine
             {
                 multiplyer = 1.5;
             }
+            System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
+            creddits = (betAmmount * multiplyer) + creddits;
       
         }
         else if (roll1 == roll3)
