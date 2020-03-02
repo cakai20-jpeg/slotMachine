@@ -3,15 +3,26 @@ public class slotMachine
 {
     public static void main(String[] args)
     {
+        boolean run = true;
+        
+        double creddits = 100;
+        
+        Scanner scan = new Scanner(System.in);
+        
+        while(run)
+        {
+        
         Machine slot1 = new Machine();
         Machine slot2 = new Machine();
         Machine slot3 = new Machine();
       
         double multiplyer = 1;
+        
+        double credditsWon = 0;
       
-        double creddits = 100;
-      
-        System.out.println("you have " + creddits + " creddits");
+        double credditsTotal = credditsWon + creddits;
+        
+        System.out.println("you have " + credditsTotal + " creddits");
       
         Scanner bet = new Scanner(System.in);
         System.out.println("Please enter bet ammount");
@@ -60,7 +71,7 @@ public class slotMachine
                 multiplyer = 5;
             }
             System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
-            creddits = (betAmmount * multiplyer) + creddits;
+            credditsWon = (betAmmount * multiplyer) + creddits;
         }
         else if (roll1 == roll2)
         {
@@ -90,7 +101,7 @@ public class slotMachine
                 multiplyer = 1.5;
             }
             System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
-            creddits = (betAmmount * multiplyer) + creddits;
+            credditsWon = (betAmmount * multiplyer) + creddits;
       
         }
         else if (roll1 == roll3)
@@ -124,7 +135,7 @@ public class slotMachine
                 multiplyer = 1.5;
             }
                 System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
-                creddits = (betAmmount * multiplyer) + creddits;
+                credditsWon = (betAmmount * multiplyer) + creddits;
         }
         else if (roll2 == roll3)
         {
@@ -153,11 +164,22 @@ public class slotMachine
                 multiplyer = 1.5;
             }
                 System.out.println("Congragulations! you just won " + betAmmount * multiplyer + "creddits!");
-                creddits = (betAmmount * multiplyer) + creddits;
+                credditsWon = (betAmmount * multiplyer) + creddits;
         }
         else 
         {
             System.out.println("better luck next time");
+        }
+        System.out.println("would you like to play again? y/n");
+        String again = scan.nextLine();
+        if(again == "n")
+        {
+            run = false;
+        }
+        else 
+        {
+            run = true;
+        }
         }
         }
     }
