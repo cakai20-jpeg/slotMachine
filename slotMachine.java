@@ -176,7 +176,7 @@ public class slotMachine
         }
         
         System.out.println();
-        System.out.println("would you like to play again? y/n");
+        System.out.println("press n to stop");
         System.out.println();
         
         }
@@ -186,7 +186,7 @@ public class slotMachine
         {
             run = false;
         }
-        else if(again == "y")
+        else 
         {
             run = true;
         }
