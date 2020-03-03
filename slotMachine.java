@@ -10,7 +10,7 @@ public class slotMachine
         
         Scanner scan = new Scanner(System.in);
         
-        while(run)
+        while(run == true)
         {
         
         Machine slot1 = new Machine();
@@ -171,20 +171,26 @@ public class slotMachine
         {
             System.out.println("better luck next time");
         }
-        System.out.println("would you like to play again? yes/no");
-        String again = scan.nextLine();
-        if(again == "no")
+        
+        
+        }
+        
+        System.out.println();
+        System.out.println("would you like to play again? y/n");
+        System.out.println();
+        
+        }
+        
+       String again = scan.nextLine();
+        if(again == "n")
         {
             run = false;
         }
-        else 
+        else if(again == "y")
         {
             run = true;
         }
         
-        }
-        
-        }
     }
 }
 
