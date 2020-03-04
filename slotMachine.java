@@ -19,10 +19,6 @@ public class slotMachine
       
         double multiplyer = 1;
         
-       
-      
-
-        
         System.out.println("you have " + creddits + " creddits");
       
         Scanner bet = new Scanner(System.in);
